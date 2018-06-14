@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
+const PokerHand = require('poker-hand-evaluator');
 const hisPokerHand = new PokerHand('AH KH QH JH TH');
 express()
   
