@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
+require('js-combinatorics');
 const PokerHand = require('poker-hand-evaluator');
 const myPokerHand = new PokerHand('KS KH QC AH AD');
 express()
