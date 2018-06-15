@@ -14,5 +14,5 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.send(myPokerHand.describe()))
-
+ .get('/Combi', (req, res) => while(a = cmb.next()) res.send(a);
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
