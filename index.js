@@ -4,16 +4,15 @@ const PORT = process.env.PORT || 5000
 
 var Combinatorics = require('js-combinatorics');
 var cmb, a;
-cmb = Combinatorics.power(['a','b','c']);
+cmb = Combinatorics.combination(['a', 'b', 'c', 'd'], 2);
 
 
 const PokerHand = require('poker-hand-evaluator');
 const myPokerHand = new PokerHand('KS KH QC AH AD');
 express()
-  .use(express.static(path.join(__dirname, 'public')))
+  .use(express.static (path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => cmb.forEach(function(a){ res.send(a) })
-
+  .get('/', (req, res) => res.send(a))
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
