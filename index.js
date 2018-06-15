@@ -2,8 +2,8 @@ const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
-var Combinatorics = require('js-combinatorics');
-var cmb, a;
+var combinatorics = require('js-combinatorics');
+var cmb, a = 'asd';
 cmb = Combinatorics.combination(['a','b','c','d'], 2);
 
 
