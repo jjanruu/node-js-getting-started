@@ -14,6 +14,10 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => 
-       res.send(a))
+       for (int i = 0; i < 5; i++)
+			{
+        res.send([i])
+			})
+      
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
