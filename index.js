@@ -3,6 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 require('js-combinatorics');
+var cmb, a;
 cmb = Combinatorics.combination(['a','b','c','d'], 2);
 while(a = cmb.next()) console.log(a);
 
