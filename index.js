@@ -3,8 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var combinatorics = require('js-combinatorics');
-var cmb, a;
-cmb = Combinatorics.combination(['a', 'b', 'c', 'd'], 2);
+
 
 
 const PokerHand = require('poker-hand-evaluator');
@@ -14,6 +13,8 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => 
+       var cmb, a;
+       cmb = Combinatorics.combination(['a', 'b', 'c', 'd'], 2);
        while(a = cmb.next())
         {
           res.send(a));
