@@ -3,6 +3,9 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 require('js-combinatorics');
+cmb = Combinatorics.combination(['a','b','c','d'], 2);
+while(a = cmb.next()) console.log(a);
+
 const PokerHand = require('poker-hand-evaluator');
 const myPokerHand = new PokerHand('KS KH QC AH AD');
 express()
