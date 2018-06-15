@@ -14,9 +14,9 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => 
-       for (int i = 0; i < 5; i++)
+       for (var i = 0; i < 5; i++)
 			{
-        res.send(i)
+        
 			})
       
 
