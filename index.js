@@ -15,7 +15,7 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) =>
        {
-	while(a = cmb.next()); res.send(a)
+	while(a = cmb.next()); res.send('a', 'b', 'c', 'd')
        })
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
