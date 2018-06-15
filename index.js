@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var Combinatorics = require('js-combinatorics');
-var cmb, a = 'asd';
+var cmb, a;
 cmb = Combinatorics.combination(['a','b','c','d'], 2);
 
 
@@ -13,5 +13,5 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  .get('/', (req, res) => res.send(a))
+  .get('/', (req, res) => while(a = cmb.next()) res.send(a))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
