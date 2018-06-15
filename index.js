@@ -15,10 +15,10 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => 
       
-       while(a = cmb.next())
+       /*while(a = cmb.next())
         {
          
-        }
-       // res.send(a));
+        }*/
+        res.send(a));
         )
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
