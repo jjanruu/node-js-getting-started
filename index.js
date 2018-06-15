@@ -16,7 +16,7 @@ express()
   .get('/', (req, res) => 
        for (int i = 0; i < 5; i++)
 			{
-        res.send([i])
+        res.send(i)
 			})
       
 
