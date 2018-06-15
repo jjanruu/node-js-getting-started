@@ -13,8 +13,5 @@ express()
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  
-  .get('/', (req, res) {
-       while(a = cmb.next()) res.send(a);
-}
+  .get('/', (req, res) => res.send(myPokerHand.describe()))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
