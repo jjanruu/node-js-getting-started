@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 var Combinatorics = require('js-combinatorics');
 var cmb, a;
 cmb = Combinatorics.combination(['a','b','c','d'], 2);
-while(a = cmb.next()) console.log(a);
+while(a = cmb.next()) res.send(a);
 
 const PokerHand = require('poker-hand-evaluator');
 const myPokerHand = new PokerHand('KS KH QC AH AD');
