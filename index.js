@@ -15,10 +15,12 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) =>
        {
+	var combi = [];
 	while(a = cmb.next())
 	{
-		res.send(a)
+		combi.push(a);
 	}
+	res.send(combi);
        })
 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
