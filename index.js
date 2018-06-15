@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 5000
 
 var combinatorics = require('js-combinatorics');
  var cmb, a;
+a="";
 cmb = Combinatorics.combination(['a', 'b', 'c', 'd'], 2);
 
 
