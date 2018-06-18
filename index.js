@@ -30,7 +30,6 @@ express()
        {
         
         var temp = req.params.hand;
-        res.send(temp);
         cmb = Combinatorics.combination(temp, 5);
         var combi = [];
         while(a = cmb.next())
