@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var Combinatorics = require('js-combinatorics');
-
+var cmb = Combinatorics.combination([], 5);
 
 
 
@@ -26,7 +26,7 @@ express()
        {
         res.send(req.params.hand);
 //var id = req.params.id
-        var cmb = Combinatorics.combination([], 5);
+        
         var combi = [];
         while(a = cmb.next())
         {
