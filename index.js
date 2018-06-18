@@ -12,6 +12,10 @@ express()
   .use(express.static (path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
+  .get('/', (req, res) =>
+  {
+res.send(myPokerHand.PokerHand.get("rank"));
+  })
   .get('/poker/:hand', (req, res) =>
   {
         var temp = req.params.hand;
@@ -22,8 +26,7 @@ express()
         {
           combi.push(a);
         }
-        res.send(myPokerHand.PokerHand.get("rank"));
-        //myPokerHand.PokerHand.get("rank");
+        res.send(combi);
 //var id = req.params.id
   })
        
