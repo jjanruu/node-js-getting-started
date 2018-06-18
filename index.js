@@ -14,7 +14,7 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) =>
   {
-res.send(myPokerHand.PokerHand.get("rank"));
+res.send(myPokerHand.getScore());
   })
   .get('/poker/:hand', (req, res) =>
   {
