@@ -19,21 +19,21 @@ express()
  })*/
  .get('/', (req, res) =>
  {
-   
+  var combi = [];
+  while(a = cmb.next())
+  {
+    combi.push(a);
+  }
+  res.send(combi);
  })
 
-  .get('/poker/:hand', (req, res) =>
+  /*.get('/poker/:hand', (req, res) =>
        {
         res.send(req.params);
 //var id = req.params.id
         
-        var combi = [];
-        while(a = cmb.next())
-        {
-          combi.push(a);
-        }
-        res.send(combi);
-            })
+        
+            })*/
        
   
 
