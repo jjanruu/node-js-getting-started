@@ -26,11 +26,11 @@ express()
         res.send(combi);
  })
 
-  .get('/poker/:hand', (req, res) =>
+  .get('/poker/', (req, res) =>
        {
-        var temp = req.params.hand;
-        //res.send(temp);
-        cmb = Combinatorics.combination([req.params.hand], 5);
+        var temp = req.params;
+        res.send(temp);
+        //cmb = Combinatorics.combination([temp], 5);
         var combi = [];
         while(a = cmb.next())
         {
