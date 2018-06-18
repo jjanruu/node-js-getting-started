@@ -28,7 +28,7 @@ express()
 
   .get('/:poker/', (req, res) =>
        {
-        var temp = req.params;
+        var temp = req.params.poker;
         res.send(temp);
         //cmb = Combinatorics.combination([temp], 5);
         var combi = [];
