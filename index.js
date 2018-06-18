@@ -31,7 +31,8 @@ express()
        {
         var temp = req.params.hand;
         res.send(temp);
-        //var cmb = Combinatorics.combination([temp], 5);
+        var cnv = JSON.parse("[" + temp + "]");
+        var cmb = Combinatorics.combination([cnv], 5);
         var combi = [];
         while(a = cmb.next())
         {
