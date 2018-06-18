@@ -17,14 +17,14 @@ express()
         var temp = req.params.hand;
         var cnv = JSON.parse("[" + temp + "]"); // to array
         var cmb = Combinatorics.combination(cnv, 5);
-        var combi = [];
+        var combi = "hand"+[];
         while(a = cmb.next())
         {
           combi.push(a);
         }
         res.send(combi);
 //var id = req.params.id
- })
+  })
        
   
 
