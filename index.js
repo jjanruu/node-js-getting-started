@@ -14,7 +14,7 @@ express()
   .set('view engine', 'ejs')
   .get('/poker/:hand', (req, res) =>
   {
-        var temp = req.params.hand;
+        var temp = req.params;
         var cnv = JSON.parse("[" + temp + "]"); // to array
         var cmb = Combinatorics.combination(cnv, 5);
         var combi = [];
