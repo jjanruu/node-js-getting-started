@@ -30,12 +30,12 @@ express()
        {
         var temp = req.params.hand;
         res.send(temp.length);
-        cmb = Combinatorics.combination([temp], 5);
+        /*cmb = Combinatorics.combination([temp], 5);
         var combi = [];
         while(a = cmb.next())
         {
           combi.push(a);
-        }
+        }*/
         //res.send(combi);
 //var id = req.params.id
             })
