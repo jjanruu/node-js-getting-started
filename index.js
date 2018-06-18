@@ -17,7 +17,7 @@ express()
  {
     res.send(req.params);
  })*/
-  .get('/', (req, res) =>
+  .get('/hand', (req, res) =>
        {
 	var combi = [];
 	while(a = cmb.next())
