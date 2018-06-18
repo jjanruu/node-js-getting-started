@@ -13,13 +13,13 @@ express()
   .use(express.static (path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  /*.get('', function (req,res)
+  /*.get('/user/:userID', function (req,res)
  {
     res.send(req.params);
  })*/
  .get('/', (req, res) =>
  {
-   res.send("g");
+   
  })
 
   .get('/poker', (req, res) =>
