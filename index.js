@@ -14,7 +14,7 @@ express()
   .get('/', (req, res) =>
   {
     const myPokerHand = new PokerHand('KS KH QC AH AD');
-  res.send(myPokerHand);
+  res.send(myPokerHand.rank);
   })
   .get('/poker/:hand', (req, res) =>
   {
