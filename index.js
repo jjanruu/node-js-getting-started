@@ -29,7 +29,7 @@ express()
 
   .get('/poker/:hand', (req, res) =>
        {
-        res.send(req.params.hand);
+        //res.send(req.params.hand);
         var temp = req.params.hand;
         cmb = Combinatorics.combination(myPokerHand, 5);
         var combi = [];
