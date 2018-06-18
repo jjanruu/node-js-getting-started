@@ -26,7 +26,7 @@ express()
         res.send(combi);
  })
 
-  .get('/poker/', (req, res) =>
+  .get('/:poker/', (req, res) =>
        {
         var temp = req.params;
         res.send(temp);
