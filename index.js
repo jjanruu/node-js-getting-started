@@ -18,6 +18,7 @@ express()
  })*/
  .get('/', (req, res) =>
  {
+        cmb = Combinatorics.combination(["Z","B","C","D","E","F","G"], 5);
         var combi = [];
         while(a = cmb.next())
         {
@@ -26,11 +27,11 @@ express()
         res.send(combi);
  })
 
-  .get('/:poker/', (req, res) =>
+  .get('/poker/:hand', (req, res) =>
        {
-        var temp = req.params.poker;
+        var temp = req.params.hand;
         res.send(temp);
-        //cmb = Combinatorics.combination([temp], 5);
+        cmb = Combinatorics.combination([temp], 5);
         var combi = [];
         while(a = cmb.next())
         {
