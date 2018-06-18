@@ -31,7 +31,7 @@ express()
        {
         res.send(req.params.hand);
         var temp = req.params.hand;
-        cmb = Combinatorics.combination(temp, 5);
+        cmb = Combinatorics.combination(myPokerHand, 5);
         var combi = [];
         while(a = cmb.next())
         {
