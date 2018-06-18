@@ -6,7 +6,6 @@ var Combinatorics = require('js-combinatorics');
 var cmb = Combinatorics.combination(["A", "B", "C", "D", "E", "F", "G"], 5);
 var a;
 
-
 const PokerHand = require('poker-hand-evaluator');
 const myPokerHand = new PokerHand('KS KH QC AH AD');
 express()
@@ -19,7 +18,6 @@ express()
  })*/
  .get('/', (req, res) =>
  {
-  cmb = Combinatorics.combination(myPokerHand, 5);
         var combi = [];
         while(a = cmb.next())
         {
