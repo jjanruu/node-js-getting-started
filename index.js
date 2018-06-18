@@ -17,7 +17,12 @@ express()
  {
     res.send(req.params);
  })*/
-  .get('/hand', (req, res) =>
+ .get('/', (req, res) =>
+ {
+   res.send("g");
+ })
+
+  .get('/poker', (req, res) =>
        {
 	var combi = [];
 	while(a = cmb.next())
