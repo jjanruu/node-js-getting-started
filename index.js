@@ -17,7 +17,7 @@ express()
  {
     res.send(req.params);
  })*/
- .get('/', (req, res) =>
+ /*.get('/', (req, res) =>
  {
   var combi = [];
   while(a = cmb.next())
@@ -25,12 +25,12 @@ express()
     combi.push(a);
   }
   res.send(combi);
- })
+ })*/
 
-  /*.get('/poker/:hand', (req, res) =>
+  .get('/poker/:hand', (req, res) =>
        {
-        //res.send(req.params.hand);
-        cmb = Combinatorics.combination(["req.params"], 5);
+        res.send(req.params.hand);
+        //cmb = Combinatorics.combination(["req.params"], 5);
         var combi = [];
         while(a = cmb.next())
         {
@@ -38,7 +38,7 @@ express()
         }
         res.send(combi);
 //var id = req.params.id
-            })*/
+            })
        
   
 
