@@ -24,6 +24,7 @@ express()
 
   .get('/poker/:cmb', (req, res) =>
        {
+        res.send(req.params);
         var  val1, val2, val3, val4, val5, val6, val7;
         var cmb = Combinatorics.combination([val1, val2, val3, val4, val5, val6, val7], 5);
 	var combi = [];
