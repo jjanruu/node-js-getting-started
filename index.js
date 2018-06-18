@@ -22,7 +22,7 @@ express()
         {
           combi.push(a);
         }
-        res.send('{"hand:"'+combi);
+        res.send(combi);
 //var id = req.params.id
  })
        
