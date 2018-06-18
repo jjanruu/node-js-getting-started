@@ -24,7 +24,7 @@ express()
 
   .get('/poker/:hand', (req, res) =>
        {
-        res.send(req.params.hand);
+        res.send(req.params);
 //var id = req.params.id
         
         var combi = [];
