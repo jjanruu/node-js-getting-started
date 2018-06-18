@@ -22,18 +22,18 @@ express()
    
  })
 
-  .get('/poker/:cmb', (req, res) =>
+  .get('/poker/:hand', (req, res) =>
        {
-        res.send(req.params);
-        var  val1, val2, val3, val4, val5, val6, val7;
-        var cmb = Combinatorics.combination([val1, val2, val3, val4, val5, val6, val7], 5);
-	var combi = [];
-	while(a = cmb.next())
-	{
-		combi.push(a);
-	}
-	res.send(combi);
-       })
+        res.send(req.params.hand);
+//var id = req.params.id
+        var cmb = Combinatorics.combination([], 5);
+        var combi = [];
+        while(a = cmb.next())
+        {
+          combi.push(a);
+        }
+        res.send(combi);
+            })
        
   
 
