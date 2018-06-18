@@ -28,8 +28,9 @@ express()
 
   .get('/poker/:hand', (req, res) =>
        {
-        res.send(req.params.hand);
-        //var temp = req.params.hand;
+        
+        var temp = req.params.hand;
+        res.send(temp);
         cmb = Combinatorics.combination(myPokerHand, 5);
         var combi = [];
         while(a = cmb.next())
