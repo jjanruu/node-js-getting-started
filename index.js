@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var Combinatorics = require('js-combinatorics');
-var cmb = Combinatorics.combination(["A","B","C","D","E","F","G"], 5);
+//var cmb = Combinatorics.combination(["A","B","C","D","E","F","G"], 5);
 var a;
 
 const PokerHand = require('poker-hand-evaluator');
@@ -18,7 +18,7 @@ express()
  })*/
  .get('/', (req, res) =>
  {
-        cmb = Combinatorics.combination(["Z","B","C","D","E","F","G"], 5);
+        var cmb = Combinatorics.combination(["Z","B","C","D","E","F","G"], 5);
         var combi = [];
         while(a = cmb.next())
         {
@@ -30,8 +30,8 @@ express()
   .get('/poker/:hand', (req, res) =>
        {
         var temp = req.params.hand;
-        res.send(temp);
-        cmb = Combinatorics.combination([temp], 5);
+        //res.send(temp);
+        var cmb = Combinatorics.combination([temp], 5);
         var combi = [];
         while(a = cmb.next())
         {
