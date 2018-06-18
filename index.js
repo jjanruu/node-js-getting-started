@@ -17,7 +17,7 @@ express()
         var temp = req.params.hand;
         var cnv = JSON.parse("[" + temp + "]"); // to array
         var cmb = Combinatorics.combination(cnv, 5);
-        var combi = "hand"+[];
+        var combi = [];
         while(a = cmb.next())
         {
           combi.push(a);
