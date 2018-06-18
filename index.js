@@ -17,7 +17,7 @@ express()
  {
     res.send(req.params);
  })*/
- .get('/', (req, res) =>
+ /*.get('/', (req, res) =>
  {
   var combi = [];
   while(a = cmb.next())
@@ -25,15 +25,19 @@ express()
     combi.push(a);
   }
   res.send(combi);
- })
+ })*/
 
-  /*.get('/poker/:hand', (req, res) =>
+  .get('/poker/:hand', (req, res) =>
        {
         res.send(req.params);
+        var combi = [];
+        while(a = cmb.next())
+        {
+          combi.push(a);
+        }
+        res.send(combi);
 //var id = req.params.id
-        
-        
-            })*/
+            })
        
   
 
