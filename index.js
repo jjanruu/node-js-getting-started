@@ -12,26 +12,10 @@ express()
   .use(express.static (path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
-  /*.get('/user/:userID', function (req,res)
- {
-    res.send(req.params);
- })*/
- .get('/', (req, res) =>
- {
-        var cmb = Combinatorics.combination(["Z","B","C","D","E","F","G"], 5);
-        var combi = [];
-        while(a = cmb.next())
-        {
-          combi.push(a);
-        }
-        res.send(combi);
- })
-
   .get('/poker/:hand', (req, res) =>
-       {
+  {
         var temp = req.params.hand;
-        //res.send(temp);
-        var cnv = JSON.parse("[" + temp + "]");
+        var cnv = JSON.parse("[" + temp + "]"); // to array
         var cmb = Combinatorics.combination(cnv, 5);
         var combi = [];
         while(a = cmb.next())
@@ -40,7 +24,7 @@ express()
         }
         res.send(combi);
 //var id = req.params.id
-      })
+ })
        
   
 
