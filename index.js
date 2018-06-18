@@ -22,7 +22,8 @@ express()
         {
           combi.push(a);
         }
-        res.send(combi);
+        res.send(myPokerHand.PokerHand.get("rank"));
+        //myPokerHand.PokerHand.get("rank");
 //var id = req.params.id
   })
        
