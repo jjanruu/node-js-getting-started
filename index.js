@@ -27,7 +27,7 @@ express()
         while(a = cmb.next())
         {
           combi.push(a);
-          combToString[i].push(combi[i].join().replace(/\,/ig, " "));
+          //combToString[i].push(combi[i].join().replace(/\,/ig, " "));
           i++;
           //myPokerHand = new PokerHand(combToString[a]);
         }
