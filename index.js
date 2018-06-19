@@ -28,7 +28,7 @@ express()
         }
         //res.send(combi[0]);
         //const myPokerHand = new PokerHand(combi[0]);
-        const removeChar = combi.replace(", ", " ");
+        var removeChar = combi[0].replace(", ", " ");
         res.send(removeChar);
         //res.send("'"+removeChar+"'");
         //res.send(myPokerHand);
