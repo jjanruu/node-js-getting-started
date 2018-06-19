@@ -27,7 +27,7 @@ express()
         {
           combi.push(a);
           combToString[a] = combi[a].join().replace(/\,/ig, " ");
-          myPokerHand = new PokerHand(combToString[a]);
+          //myPokerHand = new PokerHand(combToString[a]);
         }
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
         //const myPokerHand = new PokerHand(combToString);
