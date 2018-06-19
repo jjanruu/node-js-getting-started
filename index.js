@@ -23,10 +23,12 @@ express()
         var combi = [];
         var combToString = [];
         const myPokerHand = new PokerHand();
+        var i = 0;
         while(a = cmb.next())
         {
           combi.push(a);
-          combToString[a].push(combi[a].join().replace(/\,/ig, " "));
+          combToString[i].push(combi[i].join().replace(/\,/ig, " "));
+          i++;
           //myPokerHand = new PokerHand(combToString[a]);
         }
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
