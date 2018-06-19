@@ -30,8 +30,7 @@ express()
         //const myPokerHand = new PokerHand(combi[0]);
         var combToString = combi[0].join();
         var removeChar = combToString.replace(/\,/ig, " ");
-        res.send(removeChar);
-        //res.send("'"+removeChar+"'");
+        res.send("'"+removeChar+"'");
         //res.send(myPokerHand);
 //var id = req.params.id
   })
