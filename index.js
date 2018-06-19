@@ -27,10 +27,11 @@ express()
           combi.push(a);
         }
         //res.send(combi[0]);
-        //const myPokerHand = new PokerHand(combi[0]);
+        //const 
         var combToString = combi[0].join();
-        var removeChar = combToString.replace(/\,/ig, " ");
-        res.send("'"+removeChar+"'");
+        var removeChar = combToString.replace(/\,/ig, " "); // replacing "," to " " and i = ignore case sensitive, g = global
+        var addQuote = "'"+removeChar+"'";
+        myPokerHand = new PokerHand(addQuote);
         //res.send(myPokerHand);
 //var id = req.params.id
   })
