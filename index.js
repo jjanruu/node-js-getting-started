@@ -22,11 +22,12 @@ express()
         var cnv = JSON.parse("[" + temp + "]"); // to array
         var cmb = Combinatorics.combination(cnv, 5);
         var combi = [];
+
         while(a = cmb.next())
         {
           combi.push(a);
         }
-        res.send(combi);
+        res.send(combi[0]);
 //var id = req.params.id
   })
        
