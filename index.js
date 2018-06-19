@@ -35,7 +35,7 @@ express()
         var combToString = [];
         for(var i = 0; i < combi.length; i++)
         {
-          combToString.push(combi[i].join().replace(/\,/ig, " "));
+          combToString.push(combi[0].join().replace(/\,/ig, " "));
         }
 
         //res.send(combToString);
