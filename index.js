@@ -27,7 +27,7 @@ express()
         {
           combi.push(a);
         }
-        myPokerHand = new PokerHand(combi[0]);
+        myPokerHand = new PokerHand(combi(0));
         res.send(myPokerHand);
 //var id = req.params.id
   })
