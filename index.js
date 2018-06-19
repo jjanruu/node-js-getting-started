@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 5000
 
 var Combinatorics = require('js-combinatorics');
 var a;
-var myPokerHand;
+const myPokerHand;
 const PokerHand = require('poker-hand-evaluator');
 
 express()
