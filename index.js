@@ -37,8 +37,8 @@ express()
         {
           combToString.push(new PokerHand(combi[i].join().replace(/\,/ig, " ")));
         }
-        const sorted = {'inner.number': combToString}
-        res.send(sorted);
+        const bestScore = sortBy(combToString, 'score');
+        res.send(bestScore);
   })
        
   
