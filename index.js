@@ -35,6 +35,7 @@ express()
 
         for(var i = 0; i < combi.length; i++)
         {
+          a = cmb.next();
           combi.push(a);
         }
 
