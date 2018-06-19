@@ -26,8 +26,8 @@ express()
         while(a = cmb.next())
         {
           combi.push(a);
-          myPokerHand[a] = new PokerHand(combi.push(a));
         }
+        myPokerHand[0] = new PokerHand(combi[0]);
         res.send(myPokerHand);
 //var id = req.params.id
   })
