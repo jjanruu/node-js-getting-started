@@ -33,7 +33,7 @@ express()
         }
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
         //const myPokerHand = new PokerHand(combToString);
-        res.send(i.join);
+        res.send(i.join());
 //var id = req.params.id
   })
        
