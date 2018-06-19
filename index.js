@@ -21,7 +21,7 @@ express()
         var a;
         var cmb = Combinatorics.combination(cnv, 5);
         var combi = [];
-        var combToString = [];
+        //var combToString = [];
         var i = 0;
         while(a = cmb.next())
         {
@@ -35,7 +35,7 @@ express()
         {
           var combToString = [];
           combToString = combi[x].join().replace(/\,/ig, " ");
-          const myPokerHand = new PokerHand(combToString);
+          //const myPokerHand = new PokerHand(combToString);
         }
         res.send("hello");
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
