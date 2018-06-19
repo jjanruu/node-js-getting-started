@@ -31,7 +31,7 @@ express()
         var combToString = combi[0].join();
         var removeChar = combToString.replace(/\,/ig, " "); // replacing "," to " " and i = ignore case sensitive, g = global
         var addQuote = "'"+removeChar+"'";
-        const myPokerHand = new PokerHand(addQuote);
+        const myPokerHand = new PokerHand(removeChar);
         res.send(myPokerHand);
 //var id = req.params.id
   })
