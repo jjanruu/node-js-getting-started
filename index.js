@@ -3,7 +3,7 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var Combinatorics = require('js-combinatorics');
-var a;
+var a,b;
 
 const PokerHand = require('poker-hand-evaluator');
 
@@ -13,8 +13,8 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) =>
   {
-    const myPokerHand = new PokerHand('KS KH QC AH AD');
-  res.send(myPokerHand.scores);
+    //const myPokerHand = new PokerHand('KS KH QC AH AD');
+    //res.send(myPokerHand.scores);
   })
   .get('/poker/:hand', (req, res) =>
   {
@@ -26,6 +26,7 @@ express()
         while(a = cmb.next())
         {
           combi.push(a);
+          const myPokerHand = new PokerHand(combi[a])
         }
         res.send(combi[0]);
 //var id = req.params.id
