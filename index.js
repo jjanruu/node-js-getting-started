@@ -26,9 +26,8 @@ express()
         {
           combi.push(a);
         }
-        const myPokerHand = new PokerHand('KS KH QC AH AD');
-        const tryyy = 'KS KH QC AH AD';
-        const removeChar = tryyy.replace(", ", " ");
+        const myPokerHand = new PokerHand(combi[0]);
+        const removeChar = myPokerHand.replace(", ", " ");
         res.send("'"+removeChar+"'");
         //res.send(myPokerHand);
 //var id = req.params.id
