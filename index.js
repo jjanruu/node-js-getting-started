@@ -29,9 +29,16 @@ express()
           //combToString[i].push(combi[i].join().replace(/\,/ig, " "));
           //myPokerHand = new PokerHand(combToString[a]);
         }
-        var combToString = combi[1].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
-        const myPokerHand = new PokerHand(combToString);
+       // var combToString = combi[1].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
+       // const myPokerHand = new PokerHand(combToString);
         res.send(myPokerHand);
+        var combToString = [];
+        for(var i = 0; i < combi.length; i++)
+        {
+          
+          combToString.push(combi[i].join().replace(/\,/ig, " "));
+        }
+        res.send(combToString);
   })
        
   
