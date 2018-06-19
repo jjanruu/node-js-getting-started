@@ -31,13 +31,15 @@ express()
           i++;
           //myPokerHand = new PokerHand(combToString[a]);
         }
+        //res.send(combi);
         for(var i = 0; combi.length; i++)
         {
           combToString[i].push(combi[i].join().replace(/\,/ig, " "));
         }
+        res.send("hello");
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
         //const myPokerHand = new PokerHand(combToString);
-        res.send(combi);
+        
 //var id = req.params.id
   })
        
