@@ -26,12 +26,12 @@ express()
         while(a = cmb.next())
         {
           combi.push(a);
-          combToString[a] = combi[a].join().replace(/\,/ig, " ");
+          combToString[a].push(combi[a].join().replace(/\,/ig, " "));
           //myPokerHand = new PokerHand(combToString[a]);
         }
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
         //const myPokerHand = new PokerHand(combToString);
-        res.send(myPokerHand);
+        //res.send(myPokerHand);
 //var id = req.params.id
   })
        
