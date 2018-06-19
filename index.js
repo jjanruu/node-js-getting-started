@@ -32,9 +32,9 @@ express()
           //myPokerHand = new PokerHand(combToString[a]);
         }
         //res.send(combi);
-        for(var i = 0; combi.length; i++)
+        for(var x = 0; combi.length; x++)
         {
-          combToString[i].push(combi[i].join().replace(/\,/ig, " "));
+          combToString[x].push(combi[x].join().replace(/\,/ig, " "));
         }
         res.send("hello");
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
