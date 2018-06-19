@@ -23,7 +23,6 @@ express()
         var combi = [];
         var combToString = [];
         //const myPokerHand = new PokerHand();
-        var i = 0;
         while(a = cmb.next())
         {
           combi.push(a);
