@@ -28,10 +28,9 @@ express()
         {
           combi.push(a);
           //combToString[i].push(combi[i].join().replace(/\,/ig, " "));
-          i++;
           //myPokerHand = new PokerHand(combToString[a]);
         }
-        res.send(myPokerHand(combi[0].join().replace(/\,/ig, " ")));
+        res.send(myPokerHand = new PokerHand(combi[0].join().replace(/\,/ig, " ")));
         /*for(var x = 0; combi.length; x++)
         {
           combToString[x].push(combi[x].join().replace(/\,/ig, " "));
