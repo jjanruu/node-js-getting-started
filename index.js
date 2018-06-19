@@ -21,16 +21,16 @@ express()
         var cnv = JSON.parse("[" + temp + "]"); // to array
         var cmb = Combinatorics.combination(cnv, 5);
         var combi = [];
-
+        var combToString = [];
+        const myPokerHand = new PokerHand();
         while(a = cmb.next())
         {
           combi.push(a);
+          combToString[a] = combi[a].join().replace(/\,/ig, " ");
+          myPokerHand = new PokerHand(combToString[a]);
         }
-        //res.send(combi[0]);
-        //const 
-        var combToString = combi[0].join().replace(/\,/ig, " ");
-        //var removeChar = combToString.replace(/\,/ig, " "); // replacing "," to " " and i = ignore case sensitive, g = global
-        const myPokerHand = new PokerHand(combToString);
+        //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
+        //const myPokerHand = new PokerHand(combToString);
         res.send(myPokerHand);
 //var id = req.params.id
   })
