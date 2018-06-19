@@ -26,13 +26,14 @@ express()
         var i = 0;
         while(a = cmb.next())
         {
-          combToString[i].push(combi.push(a).join().replace(/\,/ig, " "));
+          combi.push(a);
+          //combToString[i].push(combi[i].join().replace(/\,/ig, " "));
           i++;
           //myPokerHand = new PokerHand(combToString[a]);
         }
         //var combToString = combi[0].join().replace(/\,/ig, " "); //join = tostring() // replacing "," to " " and i = ignore case sensitive, g = global
         //const myPokerHand = new PokerHand(combToString);
-        res.send("hello");
+        res.send(combi);
 //var id = req.params.id
   })
        
